@@ -113,7 +113,7 @@ mv -f Changelog.tmp Changelog
 
 # Remove failing tests
 #   require a vaild connection
-%pom_add_plugin :maven-surefire-plugin "
+%pom_add_plugin :maven-surefire-plugin . "
 <configuration>
 	<excludes>
 		<exclude>**/AddressTest.java</exclude>
