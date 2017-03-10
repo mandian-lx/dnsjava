@@ -122,6 +122,9 @@ mv -f Changelog.tmp Changelog
 	</excludes>
 </configuration>"
 
+# Fix jar name
+%mvn_file :%{name} %{name}-%{version} %{name}
+
 %build
 %mvn_build
 
